@@ -1,0 +1,12 @@
+gross_income = float(input("Enter the gross income: "))
+dependent = int(input("Enter the number of dependents: "))
+
+dependent = dependent * 3000
+total_deduction = dependent + 10000
+
+income_tax = ((gross_income)-(total_deduction))*(.20)
+
+if income_tax <= 0:
+    print("You don't qualify to pay taxes!")
+else:
+    print(f"the income tax is ${income_tax:.2f}")
